@@ -9,8 +9,7 @@ const Navbar = () => {
     return ( <div className="
     flex
     justify-between
-    items-center px-10 border-b h-40
-    
+    items-center px-10 border-b h-30
     ">
        <Logo />
        <NavigationMenuBar />

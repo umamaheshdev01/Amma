@@ -29,8 +29,8 @@ const FirstSection = () => {
                    Experience Home-Cooked Food, Curated with Care and Delivered to Your Door..
             </p>
             <div className="flex gap-4 justify-center pt-10">
-                <button className="bg-blue-500 text-white px-10 py-4 rounded-md text-lg font-bold">Get Started</button>
-                <button className="bg-gray-600 text-white px-10 py-4 rounded-md text-lg font-bold">Learn More</button>
+                <button className="bg-blue-500 text-white px-10 py-4 rounded-md text-lg font-bold">Order Now</button>
+                <button className="bg-gray-600 text-white px-10 py-4 rounded-md text-lg font-bold">Explore</button>
 
             </div>
 

@@ -31,39 +31,38 @@ const ThirdSection = () => {
                 
                 
                 ">
-                    Fully Customizable eCommerce 
-
-
-
+                    What Our Customers Say 
                 </div>
 
-                <div className="md:px-20 space-y-6 flex-col items-center justify-center">
-                    <div className="text-lg pt-10 flex gap-4">
+                <div className=" space-y-6 flex-col items-center justify-center">
+                <div className="flex-col">
+                    <div className="text-lg flex items-center gap-5">
                         <Image
-                        src="/images/icon-store.png"
+                        src="/images/user1.png"
                         alt="feature-1"
                         width={70}
                         height={70}
                     
                         />
                         <div className="flex flex-col gap-2">
-                        Choose from a variety of store templates to get started. And customize your store to fit your brand.
+                            <br />
+                        Delightful experience! The homemade lasagna was absolutely delicious, and the delivery was right on time. Will definitely be ordering again!
 
                         </div>
-
-
                     </div>
+                 </div>
+                    
 
                     <div className="flex-col">
                         <div className="text-lg flex items-center gap-5" >
                             <Image
-                            src="/images/icon-product.png"
+                            src="/images/user2.png"
                             alt="feature-1"
                             width={70} 
                             height={70}
                             />
                             <div>
-                            Add unlimited products and variations. And manage your inventory with ease.
+                            From order to delivery, everything was smooth sailing. I appreciate the convenience and reliability of this service.
 
                             </div>
                     </div>
@@ -73,14 +72,13 @@ const ThirdSection = () => {
                     <div className="flex-col">
                         <div className="text-lg flex items-center gap-5" >
                             <Image
-                            src="/images/icon-analytics.png"
+                            src="/images/user2.png"
                             alt="feature-1"
                             width={70} 
                             height={70}
                             />
                             <div>
-                            Gain valuable insights into your customers and products with
-                  our analytics tools.
+                            The homemade pies were a hit at our family gathering. Everyone raved about how tasty they were. Can't wait to try more from the menu
 
                             </div>
                     </div>
@@ -90,13 +88,13 @@ const ThirdSection = () => {
                     <div className="flex-col">
                         <div className="text-lg flex items-center gap-5" >
                             <Image
-                            src="/images/icon-shield.png"
+                            src="/images/user4.png"
                             alt="feature-1"
                             width={70} 
                             height={70}
                             />
                             <div>
-                            Best in class security to protect your data and your customers.
+                            Supporting local businesses has never been easier or more delicious. I'm hooked!
 
                             </div>
                     </div>

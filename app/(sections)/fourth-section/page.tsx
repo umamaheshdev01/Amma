@@ -1,6 +1,4 @@
 
-
-
 const FourthSection = () => {
     return ( 
     <div className="items-center flex justify-center md:py-10">

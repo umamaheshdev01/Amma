@@ -67,37 +67,34 @@ const images = [
 ];
 
 const Carousel = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentImageIndex((prevIndex) =>
+  //       prevIndex === images.length - 1 ? 0 : prevIndex + 1
+  //     );
+  //   }, 5000);
 
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
 
   return (
     <div>
       <div
-        className="items-center justify-center flex text-3xl font-bold md:pb-10 px-10
+        className="items-center justify-center flex text-3xl font-bold md:pb-5 px-10
         bg-gradient-to-r
         from-blue-500
         to-green-300
         bg-clip-text
-        text-transparent
-
-        
-        "
-      >
-        More than 100+ brands have built their business with Bird Software
+        text-transparent">
+        Proudly delivering to over 300+ neighborhoods. <br /> Bringing homemade delights to every corner!
+        <hr />
       </div>
 
-      <div className="grid grid-cols-3 p-4 md:flex">
+      {/* <div className="grid grid-cols-3 p-4 md:flex">
         <AnimatePresence
         custom={currentImageIndex}>
             {images.map((image, index) => (
@@ -115,14 +112,7 @@ const Carousel = () => {
                 custom={index}
                 transition={{ 
                     opacity: { duration: 0.5 },
-                }}
-
-
-
-                >
-
-
-
+                }}>
                     <Image
                     src={image.url}
                     alt={image.alt}
@@ -135,8 +125,7 @@ const Carousel = () => {
                 </motion.div>
             ))}
         </AnimatePresence>
-
-      </div>
+      </div> */}
     </div>
   );
 };

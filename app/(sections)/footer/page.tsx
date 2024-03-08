@@ -9,7 +9,7 @@ const Footer = () => {
        <div className="flex justify-evenly gap-4 p-4">
         <div>
             <div className="flex flex-col p-4 cursor-pointer text-xl">
-             All rights reserved. @2023 by Bird Inc.
+             All rights reserved. @2024 Amma's Ruchi Inc.
 
             </div>
         </div>
