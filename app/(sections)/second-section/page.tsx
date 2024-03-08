@@ -75,7 +75,7 @@ flex  justify-center pb-10
                 pb-10
                 
                 ">
-                    From startup to enterprise, Bird is built for every type of business.
+                    From Our Kitchen to Yours: Authentic Indian Flavors, Homemade with Love
 
                 </div>
                 <div className="text-2xl mb-8">

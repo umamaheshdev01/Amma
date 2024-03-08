@@ -13,8 +13,7 @@ const FirstSection = () => {
 
             
             ">
-                Build a brand and start selling in seconds
-
+                Taste of Home, Made with Love
             </div>
 
             <p className="text-lg md:text-xl md-10
@@ -27,8 +26,7 @@ const FirstSection = () => {
             
             "
             >
-                   No matter what you sell,
-            Bird Software has everything you need to run your online store.
+                   Experience Home-Cooked Food, Curated with Care and Delivered to Your Door..
             </p>
             <div className="flex gap-4 justify-center pt-10">
                 <button className="bg-blue-500 text-white px-10 py-4 rounded-md text-lg font-bold">Get Started</button>

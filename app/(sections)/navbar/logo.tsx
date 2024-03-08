@@ -1,4 +1,4 @@
-
+import amma from './Amma.jpeg'
 import Image from "next/image";
 
 const Logo = () => {
@@ -6,9 +6,9 @@ const Logo = () => {
 
 
         <Image 
-        src="/images/logo/logo-1.svg" 
-        width={50} 
-        height={50} 
+        src={amma} 
+        width={100} 
+        height={100} 
         alt="logo"
         />
     
