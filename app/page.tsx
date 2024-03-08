@@ -9,15 +9,14 @@ import FifthSection from "./(sections)/fifth-section/page";
 import Footer from "./(sections)/footer/page";
 
 export default function Home() {
-  return <div>
+  return( <>
     <Navbar />
     <FirstSection />
     <Carousel />
     <SecondSection />
     <ThirdSection />
-    <FourthSection />
-    <Pricing />
+
     <FifthSection />
     <Footer />
-  </div>;
+  </>);
 }
