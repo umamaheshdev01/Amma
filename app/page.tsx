@@ -1,12 +1,12 @@
 import Carousel from "@/components/carousel";
-import FirstSection from "./first-section/page";
-import Navbar from "./navbar/page";
-import SecondSection from "./second-section/page";
-import ThirdSection from "./third-section/page";
-import FourthSection from "./fourth-section/page";
-import Pricing from "./pricing/page";
-import FifthSection from "./fifth-section/page";
-import Footer from "./footer/page";
+import FirstSection from "./(sections)/first-section/page";
+import Navbar from "./(sections)/navbar/page";
+import SecondSection from "./(sections)/second-section/page";
+import ThirdSection from "./(sections)/third-section/page";
+import FourthSection from "./(sections)/fourth-section/page";
+import Pricing from "./(sections)/pricing/page";
+import FifthSection from "./(sections)/fifth-section/page";
+import Footer from "./(sections)/footer/page";
 
 export default function Home() {
   return <div>
