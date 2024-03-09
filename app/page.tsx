@@ -10,8 +10,15 @@ export default function Home() {
   return( <>
     <Navbar />
     <FirstSection />
+    
     <Carousel />
+    <br />
+    <hr />
+    <br />
     <SecondSection />
+    <br />
+    <hr />
+    <br />
     <ThirdSection />
     <FifthSection />
     <Footer />

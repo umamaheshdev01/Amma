@@ -22,39 +22,39 @@ import {
 
   const components: { title: string, description: string}[] = [
     {
-        title: "Frozen",
+        title: "Biryani",
     
         description:
-          "Recommended template for most use cases. Includes all the components you need to get started.",
+          " Layers of aromatic rice and tender meat, a culinary masterpiece that transports you to the streets of India.",
       },
       {
-        title: "Swift",
+        title: "Home-made Desserts",
     
         description:
-          "A template with a minimal set of components. Use this template if you want to build your own components.",
+          "Indulgent treats crafted with love and passion, bringing joy and sweetness to every occasion.",
       },
       {
-        title: "Tuscany",
+        title: "Parathas",
     
         description:
-          "Advanced template with more components and features. Use this template if you want to build a complex UI.",
+          "Buttery layers of golden perfection, stuffed with savory fillings for a delightful culinary experience.",
       },
       {
-        title: "Amber",
+        title: "Thali",
     
-        description: "Great for building a marketing or landing page.",
+        description: "Bursting with colors and flavors, this vegetarian thali showcases a diverse array of dishes.",
       },
       {
-        title: "Tide",
+        title: "Rotis",
     
         description:
-          "Layered template with a sidebar navigation. Great for building a dashboard or admin panel.",
+          "Soft and fluffy rounds of whole wheat dough, lovingly cooked on a hot griddle.",
       },
       {
-        title: "Mint",
+        title: "Homemade Snacks",
      
         description:
-          "Nice template for building a blog or a content-heavy website.",
+          "Elevate snack time with our homemade delights: crispy samosas, tangy chaats, and spicy pakoras crafted with love .",
       },
   ]
 
@@ -114,7 +114,7 @@ import {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          {/* <NavigationMenuItem>
             <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink
               className="font-medium"
@@ -122,7 +122,7 @@ import {
                 Request a Dish
               </NavigationMenuLink>
             </Link>
-          </NavigationMenuItem>
+          </NavigationMenuItem> */}
 
           <NavigationMenuItem>
             <Link href="/" legacyBehavior passHref>
