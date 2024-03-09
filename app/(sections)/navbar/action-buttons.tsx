@@ -16,14 +16,10 @@ import {
 
   import Link from "next/link";
 import { useState } from "react";
-import SideBar1 from './sidebar/SideBar1'
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const ActionButtons = () => {
-    const [showSidebar, setShowSidebar] = useState(false);
-
-    const toggleSidebar = () => {
-        setShowSidebar(!showSidebar);
-    };
+    
     return ( 
     <div>
 <div className="md:hidden">
@@ -72,11 +68,11 @@ const ActionButtons = () => {
                 className="text-md bg-blue-500">
                     Sign up
                 </Button> </Link>  
-                {/* <Button className="md:w-20 h-10 bg-gray-600" onClick={toggleSidebar}>
-                    User 
-                </Button>
+                {/* <Button className="md:w-auto h-10 bg-gray-600">
+                 <AccountCircleIcon/>
+                </Button> */}
                 
-                {showSidebar && <SideBar1 />} */}
+                
             </div>
  
 

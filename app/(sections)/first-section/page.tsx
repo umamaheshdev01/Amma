@@ -38,19 +38,9 @@ const FirstSection = () => {
 
             </div>
 
-<<<<<<< HEAD
-            <div className="pt-10">
-
-       
-                
-            <video className="rounded-xl" autoPlay muted loop>
-                <source src="/Amma\app\(sections)\first-section\pexels-pavel-danilyuk-6942484 (Original).mp4" type="video/mp4" />
-
-=======
             <div className="pt-10 ">        
             <video className="rounded-xl md:ml-[140px]" autoPlay muted loop>
                 <source src="/content/videoSec-1.mp4" type="video/mp4" />
->>>>>>> 768abe778663b2ba6a8dcbe4d70070be565b4b5e
             </video>
             </div>
 

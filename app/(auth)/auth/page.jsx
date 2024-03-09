@@ -1,10 +1,20 @@
-import React from 'react';
-import './auth'
-import './auth.css'
+"use client"
+import React, { useState } from 'react';
+import './auth.css'; // Import your CSS file
 
 function SignUpForm() {
+  const [isSignUpActive, setIsSignUpActive] = useState(false);
+
+  const handleSignUpClick = () => {
+    setIsSignUpActive(true);
+  };
+
+  const handleSignInClick = () => {
+    setIsSignUpActive(false);
+  };
+
   return (
-    <div className="container" id="container">
+    <div className={`container ${isSignUpActive ? 'right-panel-active' : ''}`} id="container">
       <div className="form-container sign-up-container">
         <form action="#">
           <h1>Create Account</h1>
@@ -40,12 +50,12 @@ function SignUpForm() {
           <div className="overlay-panel overlay-left">
             <h1>Welcome Back!</h1>
             <p>To keep connected with us please login with your personal info</p>
-            <button className="ghost" id="signIn">Sign In</button>
+            <button className="ghost" onClick={handleSignInClick}>Sign In</button>
           </div>
           <div className="overlay-panel overlay-right">
             <h1>Hello, Friend!</h1>
             <p>Enter your personal details and start journey with us</p>
-            <button className="ghost" id="signUp">Sign Up</button>
+            <button className="ghost" onClick={handleSignUpClick}>Sign Up</button>
           </div>
         </div>
       </div>
@@ -53,25 +63,15 @@ function SignUpForm() {
   );
 }
 
-function Footer() {
-  return (
-    <footer>
-      <p>
-        Created with <i className="fa fa-heart"></i> by
-        <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-        - Read how I created this and how you can join the challenge
-        <a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
-      </p>
-    </footer>
-  );
-}
 
-export default function App() {
+function App() {
   return (
     <div>
-      <h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
+      
       <SignUpForm />
-      <Footer />
+      
     </div>
   );
 }
+
+export default App;
