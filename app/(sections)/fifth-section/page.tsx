@@ -1,5 +1,5 @@
 
-
+import Link from 'next/link'
 
 const FifthSection = () => {
     return (
@@ -14,9 +14,9 @@ const FifthSection = () => {
                     
                 </div>
 
-                <button className="bg-blue-500 text-white px-6 py-3 md:w-1/4 mt-5 rounded-lg">
+                <Link href="/auth"><button className="bg-blue-500 text-white px-6 py-3 md:w-1/4 mt-5 rounded-lg">
                     Become a Seller
-                </button>
+                </button></Link>
 
             </div>
 

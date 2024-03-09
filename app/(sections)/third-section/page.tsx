@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-
+import img4 from "./imgSec-4.jpg"
 
 
 const ThirdSection = () => {
@@ -12,16 +12,18 @@ const ThirdSection = () => {
     ">
         <div className="flex-col md:flex-row gap-6 md:px-10 flex">
             <div className="md:w-2/3 w-full">
-                <video className="rounded-xl" autoPlay muted loop>
+                {/* <video className="rounded-xl" autoPlay muted loop>
                     <source src="/content/video-3.mp4" type="video/mp4" />
-
-                </video>
-
+                </video> */}
+                {/* <Image width={30} height={30} src="/imgSec-4.jpg" alt="img4"></Image>
+                 */}
+                <img  className="rounded-xl" src="/images/imgSec-4.jpg" alt="uuu" />
             </div>
 
-            <div className="flex-col border p-4 rounded-xl md:w-2/5">
-                <div className="text-4xl flex justify-center text-center
-                md:text-6xl
+           
+            <div className="flex-col border p-4 rounded-xl md:w-2/7">
+                <div className="text-xl flex justify-center text-center
+                md:text-5xl
                 bg-gradient-to-l
                 from-yellow-300
                 to-blue-300

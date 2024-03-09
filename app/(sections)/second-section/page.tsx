@@ -4,6 +4,7 @@
 
   import React from "react"
   import Image from "next/image"
+  import Link from "next/link"
 
 
   const features = [
@@ -82,19 +83,21 @@
             {/* Built for all businesses and communities, Bird is the only platform you need to grow your business. */}
 
             </div>
-            <button className="bg-blue-500 text-white p-4 justify-center flex md:w-1/3 rounded-lg hover:bg-blue-600">
+           <Link href="/auth"> <button className="bg-blue-500 text-white p-4 justify-center flex md:w-1/3 rounded-lg hover:bg-blue-600">
                     About Us
-            </button>
+            </button></Link>
             </div>
             
-
-            <video className="rounded-xl md:w-2/5 p-4 md:p-0 "  autoPlay muted loop >
+        <img  className="rounded-xl" width={550} height={550}  src="/images/imgSec-2.jpg" alt="uuu" />
+            {/* <video className="rounded-xl md:w-2/5 p-4 md:p-0 "  autoPlay muted loop >
                 <source src="/content/video-2.mp4" type="video/mp4" />
 
-            </video>
+            </video> */}
 
         </div>
-
+        <br />
+    <hr />
+    <br />
         <div className="flex-col items-center justify-center">
             <div className="
             text-3xl

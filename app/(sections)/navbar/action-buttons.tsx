@@ -1,5 +1,7 @@
 
+"use client"
 import { Button } from "@/components/ui/button";
+import * as React from 'react';
 
 import {
     Sheet,
@@ -13,9 +15,15 @@ import {
   import { AlignJustify } from "lucide-react";
 
   import Link from "next/link";
-
+import { useState } from "react";
+import SideBar1 from './sidebar/SideBar1'
 
 const ActionButtons = () => {
+    const [showSidebar, setShowSidebar] = useState(false);
+
+    const toggleSidebar = () => {
+        setShowSidebar(!showSidebar);
+    };
     return ( 
     <div>
 <div className="md:hidden">
@@ -28,18 +36,18 @@ const ActionButtons = () => {
                 <SheetDescription>
                     <div className="flex flex-col space-y-4 items-start w-full text-lg text-black mt-10">
                         <Link
-                        href="/"
+                        href="/auth"
                         >
                             Sign in 
                         </Link>
         
                         <Link
-                        href="/"
+                        href="/auth"
                         >
                             Contact
                         </Link>
                         <Link
-                        href="/"
+                        href="/auth"
                         >
                             About
                         </Link>
@@ -54,15 +62,21 @@ const ActionButtons = () => {
 
 
             <div className="hidden md:flex md:space-x-4">
-                
+                <Link href="/auth">
                 <Button
-                className="text-md bg-blue-500 pl-5 pr-5">
+                className="text-md bg-gray-600 pl-5 pr-5">
                     Login
-                </Button>
+                </Button></Link>
+                <Link href="/auth">
                 <Button
                 className="text-md bg-blue-500">
                     Sign up
+                </Button> </Link>  
+                {/* <Button className="md:w-20 h-10 bg-gray-600" onClick={toggleSidebar}>
+                    User 
                 </Button>
+                
+                {showSidebar && <SideBar1 />} */}
             </div>
  
 
