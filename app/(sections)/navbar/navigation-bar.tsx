@@ -64,13 +64,9 @@ import {
     return (
       <NavigationMenu>
         <NavigationMenuList
-        className="hidden md:flex md:space-x-4"
-        
-        
-        
-        >
+        className="hidden md:flex md:space-x-4" >
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Locate Your Area</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
@@ -81,28 +77,29 @@ import {
                     >
                       <Logo  />
                       <div className="mb-2 mt-4 text-lg font-medium">
-                       Bird Software
+                      AMMA'S RUCHI
                       </div>
-                      <p className="text-sm leading-tight text-muted-foreground">
-                      eCommerce platform for selling digital products.
+                      <p className="text-md leading-tight text-muted-foreground">
+                     Now available in your Local Area. 👩‍🍳
                       </p>
                     </a>
                   </NavigationMenuLink>
+            
                 </li>
-                <ListItem  title="Introduction">
-                    Learn about the basics of Bird.
+                <ListItem  title="Pick Your Location">
+                    
                 </ListItem>
-                <ListItem  title="Demo">
+                {/* <ListItem  title="Demo">
                   How to build a store in 60 seconds with Bird
                 </ListItem>
                 <ListItem  title="Community">
                     Join the community and get help or support.
-                </ListItem>
+                </ListItem> */}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Templates</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Search Food Item</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {components.map((component) => (
@@ -122,7 +119,7 @@ import {
               <NavigationMenuLink
               className="font-medium"
               >
-                Documentation
+                Request a Dish
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
@@ -131,7 +128,7 @@ import {
             <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink className="
               font-medium">
-                Pricing
+                ContactUs
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
