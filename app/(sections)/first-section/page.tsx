@@ -39,7 +39,7 @@ const FirstSection = () => {
        
                 
             <video className="rounded-xl" autoPlay muted loop>
-                <source src="/content/hero-1.mp4" type="video/mp4" />
+                <source src="/Amma\app\(sections)\first-section\pexels-pavel-danilyuk-6942484 (Original).mp4" type="video/mp4" />
 
             </video>
 
