@@ -22,7 +22,7 @@ export const GET = async(req,res)=>{
 
     const {id} = Object.fromEntries(new URL(req.url).searchParams.entries());
 
-    const {data,error} = await supabase.from('Requests').select('*').eq('id',id)
+    const {data,error} = await supabase.from('Requests').select('*').eq('customer',id)
 
     if(error)
     {
@@ -35,11 +35,26 @@ export const DELETE = async(req,res)=>{
 
     const {id} = Object.fromEntries(new URL(req.url).searchParams.entries());
 
-    const {data,error} = await supabase.from('Users').delete().eq('id',id)
+    const {data,error} = await supabase.from('Requests').delete().eq('id',id)
 
     if(error)
     {
         return NextResponse.json({msg:error},{status:500})
     }
-    return NextResponse.json({msg:'User deleted'},{status:200})
+    return NextResponse.json({msg:'Request deleted'},{status:200})
+}
+
+export const PATCH = async(req,res)=>{
+
+    const pack = await req.json()
+
+    const {id} = Object.fromEntries(new URL(req.url).searchParams.entries());
+
+    const {data,error} = await supabase.from('Requests').update(pack).eq('id',id)
+
+    if(error)
+    {
+        return NextResponse.json({msg:error},{status:500})
+    }
+    return NextResponse.json({msg:'Request updated'},{status:200})
 }
