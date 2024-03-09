@@ -1,3 +1,4 @@
+
 "use client"
 import React, { useState } from 'react';
 import './auth.css'; // Import your CSS file
@@ -14,7 +15,7 @@ function SignUpForm() {
   };
 
   return (
-    <div className={`container ${isSignUpActive ? 'right-panel-active' : ''}`} id="container">
+    <div className={`container ${isSignUpActive ? 'right-panel-active' : ''}` } id="container">
       <div className="form-container sign-up-container">
         <form action="#">
           <h1>Create Account</h1>
@@ -42,7 +43,7 @@ function SignUpForm() {
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <a href="#">Forgot your password?</a>
-          <button>Sign In</button>
+          <button className='sign-btn'>Sign In</button>
         </form>
       </div>
       <div className="overlay-container">
