@@ -2,6 +2,8 @@
 "use client"
 import React, { useState } from 'react';
 import './auth.css'; // Import your CSS file
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function SignUpForm() {
   const [isSignUpActive, setIsSignUpActive] = useState(false);
@@ -28,7 +30,8 @@ function SignUpForm() {
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
-          <button>Sign Up</button>
+          <br></br>
+          <button className='sign-btn'>Sign Up</button>
         </form>
       </div>
       <div className="form-container sign-in-container">

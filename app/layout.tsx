@@ -16,6 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+    <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-IzP4n9Ejm3cWzg7XrSNxB3LHiPz5qAzD5lAGsX1/VoHJ9a+6Zbmw+PGz28Nb3uA6BVBbEVUfWxdzv3tYuj9Rg==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+
+    </head>
       <body className={font.className}>{children}</body>
     </html>
   )

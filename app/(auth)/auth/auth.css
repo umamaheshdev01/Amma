@@ -67,7 +67,9 @@ button:focus {
 button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
+	border: 1px solid;
 }
+
 
 form {
 	background-color: #FFFFFF;
